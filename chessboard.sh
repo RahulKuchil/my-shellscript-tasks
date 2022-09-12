@@ -5,11 +5,11 @@ do
         tot=`expr $i + $j`
         tmp=`expr $tot % 2`
         if [ $tmp -eq 0 ]; then
-            echo -e -n "\033[47m "
+            echo -e -n "\033[47m " # White
         else
-            echo -e -n "\033[40m "
+            echo -e -n "\033[40m "  # Black
         fi
   done
- echo -e -n "\033[40m"
- echo ""
+ echo -e -n "\033[40m"  # black, ensure it exists normally
+ echo "" # new line
 done
