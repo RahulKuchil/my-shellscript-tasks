@@ -11,13 +11,13 @@ echo " 4.Division"
 read ch
 
 case  $ch in
-  1)res=`expr $1 + $2`
+  1)res=`expr $1 + $2`                  # addition
   ;;
-  2)res=`expr $1 - $2`
+  2)res=`expr $1 - $2`                  # subtraction
   ;;
-  3)res=`expr $1 \* $2`
+  3)res=`expr $1 \* $2`                 # multiplication
   ;;
-  4)res=`echo "scale=2; $1 / $2" | bc `
+  4)res=`echo "scale=2; $1 / $2" | bc ` # Division
   ;;
 esac
-echo "Result is $res"
+echo "Result is $res"                   # print the result
