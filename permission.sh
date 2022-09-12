@@ -1,5 +1,5 @@
 #!/bin/bash
-file="/home/dt/rahul/example1"
+file="/home/dt/rahul/example1"                          # file path
 
 if [ -e "$file" ]
         then
